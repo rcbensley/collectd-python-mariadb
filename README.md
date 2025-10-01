@@ -1,8 +1,8 @@
-# CollectD Plugin MariaDBD
+# CollectD Plugin MariaDB
 
 A Python CollectD plugin for MariaDB 10.6+.
 
-Orginally forked from the [collectd-python-mysql](https://github.com/chrisboulton/collectd-python-mysql), tailored towards the many additions in MariaDB and the newer, faster, C based driver, MariaDB Connector/Python.
+Orginally forked from [collectd-python-mysql](https://github.com/chrisboulton/collectd-python-mysql), tailored towards the many additions in MariaDB and the newer, faster, C based driver, MariaDB Connector/Python.
 
 
 ## Installation
@@ -12,6 +12,7 @@ Orginally forked from the [collectd-python-mysql](https://github.com/chrisboulto
 	GRANT SELECT, PROCESS, BINLOG MONITORING ON *.* to 'collectd'@'127.0.0.1' IDENTIFIED BY 'password123' WITH MAX_USER_CONNECTIONS 2;
 	```
 1. Install [MariaDB Connector/Python](https://mariadb-corporation.github.io/mariadb-connector-python/install.html)
+1. Clone this repo.
 1. Run the installer:
 	```
 	sudo python3 -m pip install . --break-system-packages
@@ -66,6 +67,7 @@ port=3307
   * Link to MariaDB's QRT docs
 * Add all the slave/replca metrics to this doc
 * Example outputs of the rrdtool data
+* Push to Pypi
 
 ## FAQ
 
